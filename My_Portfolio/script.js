@@ -7,8 +7,8 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 // Resume Modal
-document.getElementById("showResume").addEventListener("click", function() {
-    document.getElementById("resumeModal").style.display = "block";
+document.getElementById("Know More").addEventListener("click", function() {
+    windows.open("https://github.com/Sugathri03/Sugathri_Portfolio/blob/master/Sugathri_Resume_Work%20.pdf","blank");
 });
 
 document.querySelector(".close").addEventListener("click", function() {
