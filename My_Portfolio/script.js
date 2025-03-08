@@ -7,8 +7,8 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 // Resume Modal
-document.getElementById("Know More").addEventListener("click", function() {
-    windows.open("https://github.com/Sugathri03/Sugathri_Portfolio/blob/master/Sugathri_Resume_Work%20.pdf","blank");
+document.getElementById("showResume").addEventListener("click", function() {
+    document.getElementById("resumeModal").style.display = "block";
 });
 
 document.querySelector(".close").addEventListener("click", function() {
@@ -16,8 +16,4 @@ document.querySelector(".close").addEventListener("click", function() {
 });
 
 // Project Details Alert
-document.querySelectorAll('.view-project').forEach(button => {
-    button.addEventListener('click', function() {
-        alert("Project details coming soon!");
-    });
-});
+
