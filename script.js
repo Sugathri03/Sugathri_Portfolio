@@ -1,48 +1,24 @@
-// Smooth scrolling
-// document.querySelectorAll('nav ul li a').forEach(anchor => {
-//     anchor.addEventListener('click', function(event) {
-//         event.preventDefault();
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-//     });
-// });
-
-// // Resume Modal
-// document.getElementById("showResume").addEventListener("click", function() {
-//     document.getElementById("resumeModal").style.display = "block";
-// });
-
-// document.querySelector(".close").addEventListener("click", function() {
-//     document.getElementById("resumeModal").style.display = "none";
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
-    let button = document.getElementById("knowMore");
+    // ✅ Open Resume in a New Tab
+    document.getElementById("showResume").addEventListener("click", function () {
+        window.open("assets/Sugathri_Resume_Work.pdf", "_blank");
+    });
 
-    if (button) {
-        console.log("Know More button found!");
-
-        // Use "mousedown" instead of "click" (Safari prefers this)
-        button.addEventListener("mousedown", function () {
-            console.log("Button clicked! Attempting to open resume...");
-            let newTab = window.open("assets/Sugathri_Resume_Work.pdf", "_blank");
-
-            if (newTab) {
-                console.log("Resume opened successfully!");
-                newTab.focus();
-            } else {
-                console.error("Pop-up blocked! Allow pop-ups for this site.");
+    // ✅ Smooth Scroll for Navigation Links
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
             }
         });
-    } else {
-        console.error("Know More button not found!");
-    }
+    });
+
+    // ✅ Project Button Click Alert
+    document.querySelectorAll(".view-project").forEach(button => {
+        button.addEventListener("click", function () {
+            alert("Project details coming soon!");
+        });
+    });
 });
-
-
-
-// Project Details Alert
-// document.querySelectorAll('.view-project').forEach(button => {
-//     button.addEventListener('click', function() {
-//         alert("Project details coming soon!");
-//     });
-// });
