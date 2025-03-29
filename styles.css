@@ -159,7 +159,16 @@ body > section {
 
 /* 📄 Resume Section */
 #resume {
-    background: #1e1e1e;
+    background-color: #ffffff; /* ✅ White background */
+    color: #000000;            /* ✅ Black text */
+    padding: 60px 10%;
+    text-align: center;
+}
+
+#resume h2 {
+    color: #000000;            /* ✅ Ensure heading stays black */
+    font-size: 32px;
+    margin-bottom: 1rem;
 }
 
 #resume button {
@@ -311,4 +320,22 @@ body > section {
     color: #121212;
     position: relative;
     overflow: hidden; /* Keeps animations inside */
+}
+
+#about-me {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 60px 10% 40px; /* ⬅️ top, left/right, bottom */
+    text-align: center;
+}
+
+#about-me h2 {
+    margin-bottom: 1rem; /* ⬅️ space between heading and paragraph */
+    font-size: 32px;
+}
+
+#about-me p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 0.5rem; /* optional if needed */
 }

@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     // ✅ Open Resume in a New Tab
     document.getElementById("showResume").addEventListener("click", function () {
-        window.open("assets/Sugathri_Resume_Work.pdf", "_blank");
+        window.open("assets/Sugathri_Work_Resume.pdf", "_blank");
     });
-
     // ✅ Smooth Scroll for Navigation Links
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -21,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Project details coming soon!");
         });
     });
-    
+
     // ✅ "Know More" Modal Logic
     const knowMoreBtn = document.getElementById("knowMore");
     const knowMoreModal = document.getElementById("knowMoreModal");
