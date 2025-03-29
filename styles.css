@@ -57,21 +57,14 @@ nav ul li a:hover {
 /* 🎭 Hero Section */
 #hero {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background: url('images/hero.jpeg') no-repeat center center/cover;
     position: relative;
-}
-
-
-#hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Overlay effect */
+    padding: 60px 30px 30px 30px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .hero-content {
@@ -81,14 +74,20 @@ nav ul li a:hover {
 
 #hero h1 {
     font-size: 50px;
-    color: #ff6b6b;
-    animation: fadeIn 1.5s ease-in-out;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    margin : 0;
 }
 
 #hero p {
     font-size: 20px;
     margin-top: 10px;
     opacity: 0.8;
+    color: #ffffff;
 }
 
 #hero button {
