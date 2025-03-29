@@ -306,3 +306,9 @@ body > section {
 
 }
 
+.modal-content.know-more-container {
+    background: linear-gradient(to bottom, #d8f3ff, #eaf6ff); /* Light blue gradient */
+    color: #121212;
+    position: relative;
+    overflow: hidden; /* Keeps animations inside */
+}
