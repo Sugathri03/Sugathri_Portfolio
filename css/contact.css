@@ -1,0 +1,20 @@
+#contact {
+    background: #121212;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+#contact h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#contact a img {
+    width: 40px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+#contact a:hover img {
+    transform: scale(1.2);
+}

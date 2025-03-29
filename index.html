@@ -1,122 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sugathri Portfolio</title>
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="heo-content">
-            <h1>Hi, I'm Sugathri Gotu</h1>
-            <p>Full-Stack .Net Developer | Cybersecurity Enthusiast</p>
-            <button id="knowMore">Know More</button>
-        </div>
-        <!-- Pop-up Modal -->
-   <!-- Pop-up Modal -->
-<div id="knowMoreModal" class="modal">
-    <div class="modal-content know-more-container">
-      <span class="close">&times;</span>
-      <h2 class="main-title">✨ Know More About Me</h2>
-      <section class="section-block">
-        <h3 class="section-title">👩‍💻 My Tech Journey</h3>
-        <p>
-            From debugging circuits in my undergrad to debugging code in production, my path into tech has been anything but boring.
-            I started as an Electronics and Communication Engineer at JNTU Hyderabad and quickly realized my passion leaned more towards secure systems than signal processing.
-            After working at Virtusa as a .NET developer, I found myself fascinated by not just writing code but protecting it. That curiosity led me to pursue a Master’s in Computer and Information Systems Security at CSUDH, where I’m diving deep into everything from Zero Trust Architecture to CloudDevSecOps.            
-        </p>
-        <p class="motto">
-            <em>Motto:</em> If it can be hacked, I want to know how… and more importantly, how to stop it.
-        </p>
-      </section>
-  
-      <section class="section-block">
-        <h3 class="section-title">🎨💃✈️ Beyond the Code</h3>
-        <p>When I’m not writing code, you’ll probably find me:</p>
-        <ul class="fun-list">
-          <li>🧪 Turning my kitchen into a test lab.</li>
-          <li>💃 If dancing was a coding language, I’d be fluent in all frameworks.</li>
-          <li>🎨 I switch from keyboard to paintbrush — acrylics are my therapy, and blank canvases don’t throw exceptions.</li>
-          <li>🗺️ I love exploring new places — both on maps and GitHub repos and I debug my mind by changing time zones.</li>
-        </ul>
-      </section>
-  
-      <section class="section-block">
-        <h3 class="section-title">🌍 A Global Perspective</h3>
-        <p>
-            Born in India, engineered in Hyderabad, and now securing apps in sunny California, my journey has been one big cross-continental code deployment.
-            From chai-fueled study sessions to coffee-powered night calls, I’ve learned to adapt across time zones, cultures, and caffeine types. Whether it’s a team sync at 8 AM PST or 9:30 PM IST, you’ll get the same energy (just in different mugs).
-            Working globally taught me that good code speaks many languages — and great security comes from seeing the world through more than one firewall.
-        </p>
-      </section>
-  
-    </div>
-  </div>
-  
-    </section>
-    
+  <div id="hero-section"></div>
+  <div id="about-section"></div>
+  <div id="projects-section"></div>
+  <div id="resume-section"></div>
+  <div id="contact-section"></div>
 
-    <!-- About-Me Section -->
-    <section id="about-me">
-        <h2>Who I Am?</h2>
-        <p>I'm a full-stack developer with expertise in .NET and Angular, passionate about cybersecurity and committed to crafting secure, future-ready applications through continuous learning and innovation.</p>
-    </section>
+  <!-- JS to dynamically load content -->
+  <script src="js/loadSections.js"></script>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>PMI – Certification Platform</h3>
-                <p>Client Project at Virtusa</p>
-                <button class="view-project">View</button>
-            </div>
-            <div class="project-card">
-                <h3>CI/CD Pipelines using Jenkins</h3>
-                <p>Assigned Project at CSUDH</p>
-                <button class="view-project">View</button>
-            </div>
-            <div class="project-card">
-                <h3>Secure Payment Gateway</h3>
-                <p>End-to-end transaction security system</p>
-                <button class="view-project">View</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <button id="showResume">View Resume</button>
-        <div id="resumeModal" class="modal">
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Connect with Me</h2>
-        <a href="https://github.com/Sugathri03" target="_blank">
-            <img src="images/github.png" alt="GitHub">
-        </a>
-        <a href="https://linkedin.com/in/sugathrigotu/" target="_blank">
-            <img src="images/linkedin.png" alt="LinkedIn">
-        </a>
-    </section>
-
-    <script src="script.js"></script>
+  <!-- Your other JS logic -->
+  <script src="js/scroll.js"></script>
+  <script src="js/resume.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/loadSections.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
