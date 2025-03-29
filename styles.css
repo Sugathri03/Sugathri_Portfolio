@@ -142,6 +142,10 @@ body > section {
     justify-content: center;
 }
 
+#projects h2 {
+    margin-bottom: 2rem; 
+}
+
 .project-card {
     background: #e0f0ff;        /* ✅ Light blue background */
     color: #000000;             /* ✅ Dark text for readability */
