@@ -252,7 +252,7 @@ body > section {
 }
 
 .modal-content {
-    background-color: #ffffff;
+    background-color: #e6f2ff;
     color: #121212;
     margin: 5% auto;
     padding: 30px;
@@ -348,3 +348,4 @@ body > section {
     line-height: 1.6;
     margin-top: 0.5rem; /* optional if needed */
 }
+
