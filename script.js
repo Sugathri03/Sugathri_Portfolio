@@ -6,7 +6,7 @@ const closeButton = document.querySelector(".close-button");
 document.addEventListener("DOMContentLoaded", function () {
     // ✅ Open Resume in a New Tab
     document.getElementById("showResume").addEventListener("click", function () {
-        window.open("assets/Sugathri_Work.pdf", "_blank");
+        window.open("assets/sugathri_work.pdf", "_blank");
     });
     // ✅ Smooth Scroll for Navigation Links
     document.querySelectorAll('nav a').forEach(anchor => {
